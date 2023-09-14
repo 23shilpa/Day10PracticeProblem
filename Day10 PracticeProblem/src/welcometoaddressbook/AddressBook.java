@@ -48,6 +48,32 @@ class Contact{
     public String getEmail() {
         return email;
     }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setZipNo(int zipNo) {
+        this.zipNo = zipNo;
+    }
+
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
     public static void addContact(Contact add){
         list.add(add);
     }
@@ -79,11 +105,15 @@ public class AddressBook {
         Contact.addContact(c1);
         Contact.addContact(c2);
         Contact.addContact(c3);
+        c.setFirstName("Shilpa");
+        System.out.println(c.getFirstName());
 
         ArrayList<Contact> list=Contact.getContact();
         //System.out.println(Contact.getContact());
         for (int i=0;i<list.size();i++){
             System.out.println(list.get(i));
         }
+
+
     }
 }
