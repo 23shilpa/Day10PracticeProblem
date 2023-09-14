@@ -13,12 +13,13 @@ public class Contact {
         hash.put(6,"Zip");
         hash.put(7,"PhoneNumber");
         hash.put(8,"Email");
-        
+
         System.out.println(hash);
 
         for(Map.Entry value:hash.entrySet()){
             System.out.println(value.getKey() +" "+value.getValue());
         }
         System.out.println();
+
     }
 }
